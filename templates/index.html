@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="static/tweeit.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script src="static/twFetcher.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script>
+    function clearContents(element) {
+  element.value = '';
+}</script>
+
+</head>
+<body>
+
+<div id="container">
+<form action="/" method="post">
+    <textarea name="tweet" maxlength="132" onfocus="clearContents(this); ">{{ message }}</textarea>
+
+    <input type="submit" value="Submit" ></input>
+
+	<!-- <a class="button" href="#popup1">Submit</a> -->
+
+    <!-- <div id="popup1" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">×</a>
+		<div class="content">
+         <input type="submit" value="Submit" ></input>
+            <div class="g-recaptcha" data-sitekey="6LeWgAYTAAAAALUIBH7oF9pM-egxdgx5qSs6Y909"></div>
+		</div>
+	</div>
+</div>
+-->
+
+</form>
+    <div id="bird">
+</div>
+
+</div>
+    <section class="example2 container">
+		<div id="tw-widget1"></div>
+</div>
+
+</body>
+</html>

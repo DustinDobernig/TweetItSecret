@@ -1,0 +1,218 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#bird {
+    background-image: url(http://i.imgur.com/ygx3SNE.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    width: 150px;
+    height: 100px;
+    z-index: 1200;
+    margin-left: -30px;
+    margin-top: 0px;
+}
+
+#container {
+width: 85%;
+    max-width: 600px;
+    height: 230px;
+    margin-top: 50px;
+    margin-left: auto ;
+    margin-right: auto ;
+    background: #000000;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+}
+
+#timeline_container {
+width: 700px;
+    height: 230px;
+    margin-top: 50px;
+    margin-left: auto ;
+    margin-right: auto ;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+}
+
+.twtr-tweet-text { margin-left: 0px !important; }
+.twtr-user { display: none; }
+.twtr-avatar { display: none !important; }
+
+hr {
+    z-index: -500;
+  margin-top: 2em;
+}
+
+
+
+textarea {font-family: 'Avenir Next', sans-serif;
+	background: #000000;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: auto ;
+    margin-right: auto ;
+	color: #ffffff;
+	font-size: 16px;
+	resize: none;
+	height: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 0px;
+    box-sizing: border-box;
+    border: 10px solid black;
+}
+
+input[type=submit] {font-family: 'Avenir Next',sans-serif;
+    background: #28aae1;
+	width: 80px;
+	height: 40px;
+    border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #223445;
+    color: #ffffff;
+	font-size: 15px;
+    margin:0 15px 10px 20px;
+    position: relative;
+    z-index: 1305;
+	float: right;
+    cursor:pointer;
+    clear:both;
+ ;}
+
+a.twitter-timeline {
+  /* Buttonish */
+  display: inline-block;
+  padding: 6px 12px 6px 30px;
+  margin: 10px 0;
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  background: #f8f8f8 url(//platform.twitter.com/images/bird.png) 8px 8px no-repeat;
+
+  /* Text */
+  font: normal 12px/18px Helvetica, Arial, sans-serif;
+  color: #333;
+  white-space: nowrap;
+}
+
+a.twitter-timeline:hover,
+a.twitter-timeline:focus {
+  background-color: #dedede;
+}
+
+/* Color Highlight for keyboard navigation */
+
+a.twitter-timeline:focus {
+  outline: none;
+  border-color: #0089cb;
+}
+
+.header .avatar {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: px;
+    height: 48px;
+    left: -57px;
+    position: absolute;
+    top: 0;
+    width: 48px;
+}
+
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+/* popup stuff */
+
+.button {
+  font-family: 'Avenir Next',sans-serif;
+    text-decoration: none;
+    background: #28aae1;
+    padding-top: 10px;
+	width: 80px;
+	height: 30px;
+    border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #223445;
+    color: #ffffff;
+	font-size: 15px;
+    margin:0 15px 20px 20px;
+    position: relative;
+    z-index: 1305;
+    text-align: center;
+	float: right;
+    cursor:pointer;
+    clear:both;
+}
+.button:hover {
+  background: orange;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+    z-index: 5000;
+
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+    z-index: 5001;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: orange;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
